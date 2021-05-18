@@ -1,0 +1,155 @@
+/*add full-width input fields*/
+.column {
+  float: left;
+  width: 50%;
+  padding: 1px;
+  height: 50px;
+  color: black; /* Should be removed. Only for demonstration */
+}
+.selopt {
+  /* float: left; */
+  /* width: 50%; */
+  padding: 1px;
+  height: 50px;
+  color: black; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 15px;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(163, 69, 69);
+  background-color: white;
+  color: black;
+  margin-top: 20px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: white;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* padding: 14px 16px; */
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(190, 187, 184);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(32, 121, 148);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  color: black;
+  background-color: white;
+}
+select,
+option,
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+}
+/* set a style for all buttons*/
+button {
+  background-color: rgb(32, 121, 148);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 100%;
+}
+/*set styles for the cancel button*/
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #bd482d;
+}
+/*float cancel and signup buttons and add an equal width*/
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+/*add padding to container elements*/
+.container {
+  padding: 16px;
+}
+/*define the modal’s background*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+/*define the modal-content background*/
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+/*define the close button*/
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+}
+/*define the close hover and focus effects*/
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}

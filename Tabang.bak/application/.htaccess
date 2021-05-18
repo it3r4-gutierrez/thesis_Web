@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /~username/path/to/CI/
+RewriteCond $1 !^(index\.php|static|robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
